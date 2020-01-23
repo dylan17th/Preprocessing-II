@@ -8,25 +8,37 @@
         padding: 2.5% 0%;
         align-items: baseline;
         border-bottom: @silver 2px dashed;
+        @media @mobile{
+            flex-wrap: wrap;
+
+        }//closes the media for the header element
 
         h1{
             width:18%;
             margin-right:2rem;
             padding-left: 4rem;
-        }
+            @media @mobile{
+                width: 100%;
+                text-align: center;
+                padding: 2rem 0rem;
+            }//closes the media for the h1 element
+        }//closes the h1 element
 
         .navigation{
             .displayFlex( space-evenly, center, nowrap);
             width:42%;
             font-size: 1.6rem;
+            @media @mobile{
+                width:100%;
+            }//closes the media for the navigation class
             
             .nav{
                 
                 a{
                     color: black;
                     text-decoration: none;
-                }
-            }
-        }
-    }
-}
+                }//closes the a element
+            }//closes the nav class 
+        }//closes navigation call
+    }//closes header element
+}//closes navbar class 

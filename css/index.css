@@ -177,10 +177,22 @@ img {
   align-items: baseline;
   border-bottom: #C0C0C0 2px dashed;
 }
+@media (max-width: 500px) {
+  .navbar header {
+    flex-wrap: wrap;
+  }
+}
 .navbar header h1 {
   width: 18%;
   margin-right: 2rem;
   padding-left: 4rem;
+}
+@media (max-width: 500px) {
+  .navbar header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0rem;
+  }
 }
 .navbar header .navigation {
   display: flex;
@@ -189,6 +201,11 @@ img {
   flex-wrap: nowrap;
   width: 42%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navbar header .navigation {
+    width: 100%;
+  }
 }
 .navbar header .navigation .nav a {
   color: black;
@@ -205,6 +222,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 0% 5%;
+  }
+}
+.home .top-content {
+  border-bottom: #C0C0C0 2px dashed;
+}
+.home .top-content .img {
+  padding-bottom: 2rem;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -215,12 +243,27 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .ii {
+    order: 9999;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -238,6 +281,11 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -247,7 +295,32 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
